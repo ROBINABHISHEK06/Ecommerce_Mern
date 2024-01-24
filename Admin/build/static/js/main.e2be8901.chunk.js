@@ -350,7 +350,7 @@
         q = s(560),
         Q = s(198),
         X = s.n(Q),
-        Z = "https://ecommerce-mern-9k3m.vercel.app/api/",
+        Z = "https://ecommerce-mern-vmnv.vercel.app/api/",
         ee =
           null ===
             (G = JSON.parse(
