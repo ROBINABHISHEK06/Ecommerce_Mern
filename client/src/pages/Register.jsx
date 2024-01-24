@@ -84,8 +84,8 @@ const Register = () => {
     const handleClick =(e) =>{
       e.preventDefault();
       handleValidation();
-      const {username,password,mobile} =inputs;
-      register(dispatch,{username,password,mobile});
+      const {username,password,mobile,email} =inputs;
+      register(dispatch,{username,password,mobile,email});
 
     }
   return (
@@ -93,8 +93,8 @@ const Register = () => {
         <Wrapper>
             <Tittle>CREATE AN ACCOUNT</Tittle>
             <Form>
-                <Input name="firstName" onChange={handleChange} type="text" placeholder="name" />
-                <Input name="lastName" onChange={handleChange} type="text" placeholder="last name" />
+                <Input name="fullname" onChange={handleChange} type="text" placeholder="Full Name" />
+                <Input name="email" onChange={handleChange} type="text" placeholder="Email" />
                 <Input name="username" onChange={handleChange} type="text" placeholder="username" />
                 <Input name="mobile" onChange={handleChange} type="number" placeholder="Mobile Number" />
                 <Input name="password" onChange={handleChange} type="password" placeholder="password" />
